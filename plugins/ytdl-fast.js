@@ -1,6 +1,7 @@
 const config = require('../config');
 const { cmd } = require('../command');
 const { ytsearch } = require('@dark-yasiya/yt-dl.js');
+const fetch = require('node-fetch');
 
 // MP4 video download
 cmd({
