@@ -78,7 +78,7 @@ cmd({
         if (!yt.results.length) return reply("No results found!");
 
         const song = yt.results[0];
-        const apiUrl = `https://jawad-tech.vercel.app/download/yt/mp3?url=${encodeURIComponent(song.url)}`;
+        const apiUrl = `https://api.nexoracle.com/downloader/yt-audio2?url=${encodeURIComponent(song.url)}`;
         
         // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
         const res = await axios.get(apiUrl);
