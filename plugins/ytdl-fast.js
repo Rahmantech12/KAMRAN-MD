@@ -24,7 +24,7 @@ cmd({
         if (yt.results.length < 1) return reply("No results found!");
         
         let yts = yt.results[0];  
-        let apiUrl = `https://jawad-tech.vercel.app/download/yt?url=${encodeURIComponent(yts.url)}`;
+        let apiUrl = `https://api.nexoracle.com/downloader/yt-audio2?url=${encodeURIComponent(yts.url)}`;
         
         // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
         let response = await axios.get(apiUrl);
