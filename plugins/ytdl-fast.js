@@ -1,6 +1,10 @@
+// FIX 1: 'Const' ko 'const' se badla gaya
 const config = require('../config');
 const { cmd } = require('../command');
 const { ytsearch } = require('@dark-yasiya/yt-dl.js');
+// FIX 2: 'axios' library ko import kiya gaya 'fetch' ki jagah use karne ke liye.
+const axios = require('axios'); 
+
 
 // MP4 video download
 
@@ -20,22 +24,24 @@ cmd({
         if (yt.results.length < 1) return reply("No results found!");
         
         let yts = yt.results[0];  
-        let apiUrl = `https://jawad-tech.vercel.app/download/yt?url=${encodeURIComponent(yts.url)}`;
+        let apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(yts.url)}`;
         
-        let response = await fetch(apiUrl);
-        let data = await response.json();
+        // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
+        let response = await axios.get(apiUrl);
+        let data = response.data;
         
         if (data.status !== 200 || !data.success || !data.result.download_url) {
             return reply("Failed to fetch the video. Please try again later.");
         }
 
-        let ytmsg = `ðŸ“¹ *Video Downloader*
-ðŸŽ¬ *Title:* ${yts.title}
-â³ *Duration:* ${yts.timestamp}
-ðŸ‘€ *Views:* ${yts.views}
-ðŸ‘¤ *Author:* ${yts.author.name}
-ðŸ”— *Link:* ${yts.url}
-> ð¸ð‘…ð¹ð’œð’© ð’œð»ð‘€ð’œð’Ÿ â¤ï¸`;
+        // FIX 3: Non-ASCII characters ko standard Emojis se badla gaya
+        let ytmsg = `📹 *Video Downloader*
+🎬 *Title:* ${yts.title}
+⏳ *Duration:* ${yts.timestamp}
+👁️ *Views:* ${yts.views}
+👤 *Author:* ${yts.author.name}
+🔗 *Link:* ${yts.url}
+> 🅳🆄🅰 🅵🅰🆃🅸🅼🅰 ❤️`;
 
         // Send video directly with caption
         await conn.sendMessage(
@@ -74,8 +80,9 @@ cmd({
         const song = yt.results[0];
         const apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(song.url)}`;
         
-        const res = await fetch(apiUrl);
-        const data = await res.json();
+        // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
+        const res = await axios.get(apiUrl);
+        const data = res.data;
 
         if (!data?.result?.downloadUrl) return reply("Download failed. Try again later.");
 
@@ -102,4 +109,4 @@ cmd({
         reply("An error occurred. Please try again.");
     }
 });
-          
+    
