@@ -24,7 +24,7 @@ cmd({
         if (yt.results.length < 1) return reply("No results found!");
         
         let yts = yt.results[0];  
-        let apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(yts.url)}`;
+        let apiUrl = `https://jawad-tech.vercel.app/download/yt/mp4?url=${encodeURIComponent(yts.url)}`;
         
         // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
         let response = await axios.get(apiUrl);
@@ -78,7 +78,7 @@ cmd({
         if (!yt.results.length) return reply("No results found!");
 
         const song = yt.results[0];
-        const apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(song.url)}`;
+        const apiUrl = `https://jawad-tech.vercel.app/download/yt/mp3?url=${encodeURIComponent(song.url)}`;
         
         // FIX 2: 'fetch' ki jagah 'axios' use kiya gaya
         const res = await axios.get(apiUrl);
