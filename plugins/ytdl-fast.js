@@ -7,7 +7,7 @@ const { ytsearch } = require('@dark-yasiya/yt-dl.js');
 cmd({ 
     pattern: "mp4", 
     alias: ["video"], 
-    react: "ðŸŽ¥", 
+    react: "🎵", 
     desc: "Download YouTube video", 
     category: "main", 
     use: '.mp4 < Yt url or Name >', 
@@ -59,7 +59,7 @@ cmd({
 cmd({ 
     pattern: "song", 
     alias: ["play", "mp3"], 
-    react: "ðŸŽ¶", 
+    react: "🎵", 
     desc: "Download YouTube song", 
     category: "main", 
     use: '.song <query>', 
