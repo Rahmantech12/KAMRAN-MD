@@ -1,13 +1,13 @@
 const config = require('../config');
 const { cmd } = require('../command');
-const { ytsearch } = require('@distube/ytdl-core');
+const { ytsearch } = require('@dark-yasiya/yt-dl.js');
 
 // MP4 video download
 
 cmd({ 
     pattern: "mp4", 
     alias: ["video"], 
-    react: "🎵", 
+    react: "ðŸŽ¥", 
     desc: "Download YouTube video", 
     category: "main", 
     use: '.mp4 < Yt url or Name >', 
@@ -59,7 +59,7 @@ cmd({
 cmd({ 
     pattern: "song", 
     alias: ["play", "mp3"], 
-    react: "🎵", 
+    react: "ðŸŽ¶", 
     desc: "Download YouTube song", 
     category: "main", 
     use: '.song <query>', 
@@ -102,4 +102,4 @@ cmd({
         reply("An error occurred. Please try again.");
     }
 });
-                
+                         
