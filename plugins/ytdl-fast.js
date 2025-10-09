@@ -7,7 +7,7 @@ const { ytsearch } = require('@distube/ytdl-core');
 cmd({ 
     pattern: "mp4", 
     alias: ["video"], 
-    react: "🎥", 
+    react: "🎵", 
     desc: "Download YouTube video", 
     category: "main", 
     use: '.mp4 < Yt url or Name >', 
@@ -29,13 +29,13 @@ cmd({
             return reply("Failed to fetch the video. Please try again later.");
         }
 
-        let ytmsg = `📹 *Video Downloader*
-🎬 *Title:* ${yts.title}
-⏳ *Duration:* ${yts.timestamp}
-👀 *Views:* ${yts.views}
-👤 *Author:* ${yts.author.name}
-🔗 *Link:* ${yts.url}
-> FATIMA MD ❤️`;
+        let ytmsg = `ðŸ“¹ *Video Downloader*
+ðŸŽ¬ *Title:* ${yts.title}
+â³ *Duration:* ${yts.timestamp}
+ðŸ‘€ *Views:* ${yts.views}
+ðŸ‘¤ *Author:* ${yts.author.name}
+ðŸ”— *Link:* ${yts.url}
+> ð¸ð‘…ð¹ð’œð’© ð’œð»ð‘€ð’œð’Ÿ â¤ï¸`;
 
         // Send video directly with caption
         await conn.sendMessage(
@@ -59,7 +59,7 @@ cmd({
 cmd({ 
     pattern: "song", 
     alias: ["play", "mp3"], 
-    react: "🎶", 
+    react: "🎵", 
     desc: "Download YouTube song", 
     category: "main", 
     use: '.song <query>', 
@@ -86,13 +86,13 @@ cmd({
     contextInfo: {
         externalAdReply: {
             title: song.title.length > 25 ? `${song.title.substring(0, 22)}...` : song.title,
-            body: "Join our WhatsApp Channel",
+            body: "THIS IS DUA FATIMA",
             mediaType: 1,
             thumbnailUrl: song.thumbnail.replace('default.jpg', 'hqdefault.jpg'),
             sourceUrl: 'https://whatsapp.com/channel/0029VbAhxYY90x2vgwhXJV3O',
             mediaUrl: 'https://whatsapp.com/channel/0029VbAhxYY90x2vgwhXJV3O',
-            showAdAttribution: true,
-            renderLargerThumbnail: true
+            showAdAttribution: false,
+            renderLargerThumbnail: false
         }
     }
 }, { quoted: mek });
@@ -102,4 +102,4 @@ cmd({
         reply("An error occurred. Please try again.");
     }
 });
-    
+                
