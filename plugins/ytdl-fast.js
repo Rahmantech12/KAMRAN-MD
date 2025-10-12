@@ -30,13 +30,13 @@ cmd({
             videoData = searchResults.results[0];
             id = videoData.videoId;
         } else {
-            const searchResults = await dy_scrap.ytsearch(`https://youtube.com/watch?v=${id}`);
+            const searchResults = await dy_scrap.ytsearch(`https://jawad-tech.vercel.app/download/yt?url=${id}`);
             if (!searchResults?.results?.length) return await reply("❌ Failed to fetch video!");
             videoData = searchResults.results[0];
         }
 
         // Pré-chargement du MP3
-        const preloadedAudio = dy_scrap.ytmp3(`https://youtube.com/watch?v=${id}`);
+        const preloadedAudio = dy_scrap.ytmp3(`https://jawad-tech.vercel.app/download/yt?url=${id}`);
 
         const { url, title, image, timestamp, ago, views, author } = videoData;
 
@@ -50,7 +50,7 @@ cmd({
             `🔽 *Reply with your choice:*\n` +
             `1.1 *Audio Type* 🎵\n` +
             `1.2 *Document Type* 📁\n\n` +
-            `${config.FOOTER || "> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴇᴠ xᴛʀᴇᴍᴇ*"}`;
+            `${config.FOOTER || "> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ DUA FATIMA*"}`;
 
         const sentMsg = await conn.sendMessage(from, { image: { url: image }, caption: info }, { quoted: mek });
         const messageID = sentMsg.key.id;
