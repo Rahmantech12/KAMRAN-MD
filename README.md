@@ -22,8 +22,6 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 <p align='center'>
 </p>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=810&height=100&lines=+THANKS FOR CHOOSING+ALI-MD;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+ALI+INXIDE" alt="Typing SVG" /></a>
-  </p>
   
 --- 
 
