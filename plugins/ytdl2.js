@@ -30,7 +30,7 @@ cmd({
       return _0x15b3cd("No results found!");
     }
     let _0x5297bb = _0x3fe1fa.results[0x0];
-    let _0x5eb190 = "https://gtech-api-xtp1.onrender.com/api/video/yt?url=" + encodeURIComponent(_0x5297bb.url);
+    let _0x5eb190 = "https://apis.davidcyriltech.my.id/download/ytmp4?url=" + encodeURIComponent(_0x5297bb.url);
     let _0x1278ad = await fetch(_0x5eb190);
     let _0x241349 = await _0x1278ad.json();
     if (_0x241349.status !== 0xc8 || !_0x241349.success || !_0x241349.result.download_url) {
