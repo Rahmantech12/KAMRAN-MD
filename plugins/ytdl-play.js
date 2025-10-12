@@ -4,7 +4,7 @@ const config = require("../config");
 const { cmd } = require("../command");
 
 cmd({
-  pattern: "play",
+  pattern: "play/song2",
   alias: ["song", "music"],   
   desc: "Download YouTube audio by title",
   category: "download",
