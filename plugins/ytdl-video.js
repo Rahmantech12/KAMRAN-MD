@@ -3,8 +3,8 @@ const { cmd } = require('../command');
 const yts = require('yt-search');
 
 cmd({
-    pattern: "video2",
-    alias: ["mp4", "song"],
+    pattern: "drama",
+    alias: ["mp4", "ep"],
     react: "🎥",
     desc: "Download video from YouTube",
     category: "download",
@@ -32,7 +32,7 @@ cmd({
         await reply("⏳ Downloading video...");
 
         // Use API to get video
-        const apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(videoUrl)}`;
+        const apiUrl = `https://gtech-api-xtp1.onrender.com/api/video/yt?apikey=APIKEY&url=${encodeURIComponent(videoUrl)}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
 
