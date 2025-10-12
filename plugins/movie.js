@@ -54,7 +54,7 @@ async (conn, mek, m, { from, reply, sender, args }) => {
             from,
             {
                 image: { 
-                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://files.catbox.moe/7zfdcq.jpg'
+                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://files.catbox.moe/l8psgf.jpg'
                 },
                 caption: dec,
                 contextInfo: {
@@ -63,7 +63,7 @@ async (conn, mek, m, { from, reply, sender, args }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363418144382782@newsletter',
-                        newsletterName: 'Dua Fatima',
+                        newsletterName: 'FATIMA-𝐌𝐃',
                         serverMessageId: 143
                     }
                 }
@@ -76,3 +76,4 @@ async (conn, mek, m, { from, reply, sender, args }) => {
         reply(`❌ Error: ${e.message}`);
     }
 });
+    
