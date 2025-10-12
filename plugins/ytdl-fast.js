@@ -5,10 +5,10 @@ const { cmd } = require("../command");
 
 cmd({
   pattern: "song",
-  alias: ["sons", "music"],   
+  alias: ["song", "music"],   
   desc: "Download YouTube audio by title",
   category: "download",
-  react: "🎶",
+  react: "🎵",
   filename: __filename
 }, async (conn, mek, m, { from, args, q, reply }) => {
   try {
@@ -36,16 +36,10 @@ cmd({
     }, { quoted: mek });
 
     // 4. Then reply with success message
-    await reply(`‎*_FATIMA-𝙈𝘿 𝙔𝙏 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍_*
-‎*╭───────────────━┈⍟*
-‎ ‎*┋* *${video.title}*
-‎*╰───────────────━┈⍟*
-‎*╭────◉◉◉─────────៚*
-‎*┋* *_𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 FATIMA-𝙈𝘿_* 
-‎*╰────◉◉◉─────────៚*`);
+    await reply(`✅ *${video.title}* Downloaded Successfully!`);
 
   } catch (e) {
-    console.error("play error:", e);
+    console.error("play2 error:", e);
     reply("❌ Error while downloading audio.");
   }
 });
