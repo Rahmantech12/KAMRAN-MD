@@ -1,105 +1,51 @@
-const config = require('../config');
-const { cmd } = require('../command');
-const { ytsearch } = require('@dark-yasiya/yt-dl.js');
+const axios = require("axios");
+const yts = require("yt-search");
+const config = require("../config");
+const { cmd } = require("../command");
 
-// MP4 video download
+cmd({
+  pattern: "song",
+  alias: ["sons", "music"],   
+  desc: "Download YouTube audio by title",
+  category: "download",
+  react: "🎶",
+  filename: __filename
+}, async (conn, mek, m, { from, args, q, reply }) => {
+  try {
+    if (!q) return reply("❌ Please give me a song name.");
 
-cmd({ 
-    pattern: "mp4", 
-    alias: ["video"], 
-    react: "🎵", 
-    desc: "Download YouTube video", 
-    category: "main", 
-    use: '.mp4 < Yt url or Name >', 
-    filename: __filename 
-}, async (conn, mek, m, { from, prefix, quoted, q, reply }) => { 
-    try { 
-        if (!q) return await reply("Please provide a YouTube URL or video name.");
-        
-        const yt = await ytsearch(q);
-        if (yt.results.length < 1) return reply("No results found!");
-        
-        let yts = yt.results[0];  
-        let apiUrl = `https://api.princetechn.com/api/download/ytmp4?url=${encodeURIComponent(yts.url)}`;
-        
-        let response = await fetch(apiUrl);
-        let data = await response.json();
-        
-        if (data.status !== 200 || !data.success || !data.result.download_url) {
-            return reply("Failed to fetch the video. Please try again later.");
-        }
+    // 1. Search video on YouTube
+    let search = await yts(q);
+    let video = search.videos[0];
+    if (!video) return reply("❌ No results found.");
 
-        let ytmsg = `ðŸ“¹ *Video Downloader*
-ðŸŽ¬ *Title:* ${yts.title}
-â³ *Duration:* ${yts.timestamp}
-ðŸ‘€ *Views:* ${yts.views}
-ðŸ‘¤ *Author:* ${yts.author.name}
-ðŸ”— *Link:* ${yts.url}
-> ð¸ð‘…ð¹ð’œð’© ð’œð»ð‘€ð’œð’Ÿ â¤ï¸`;
+    // 2. Call your API with video URL
+    let apiUrl = `https://jawad-tech.vercel.app/download/yt?url=${encodeURIComponent(video.url)}`;
+    let res = await axios.get(apiUrl);
 
-        // Send video directly with caption
-        await conn.sendMessage(
-            from, 
-            { 
-                video: { url: data.result.download_url }, 
-                caption: ytmsg,
-                mimetype: "video/mp4"
-            }, 
-            { quoted: mek }
-        );
-
-    } catch (e) {
-        console.log(e);
-        reply("An error occurred. Please try again later.");
+    if (!res.data.status) {
+      return reply("❌ Failed to fetch audio. Try again later.");
     }
-});
 
-// MP3 song download 
-
-cmd({ 
-    pattern: "song", 
-    alias: ["play", "mp3"], 
-    react: "🎵", 
-    desc: "Download YouTube song", 
-    category: "main", 
-    use: '.song <query>', 
-    filename: __filename 
-}, async (conn, mek, m, { from, sender, reply, q }) => { 
-    try {
-        if (!q) return reply("Please provide a song name or YouTube link.");
-
-        const yt = await ytsearch(q);
-        if (!yt.results.length) return reply("No results found!");
-
-        const song = yt.results[0];
-        const apiUrl = `https://api.princetechn.com/api/download/ytmp3?url=${encodeURIComponent(song.url)}`;
-        
-        const res = await fetch(apiUrl);
-        const data = await res.json();
-
-        if (!data?.result?.downloadUrl) return reply("Download failed. Try again later.");
-
+    // 3. Send audio file first
     await conn.sendMessage(from, {
-    audio: { url: data.result.downloadUrl },
-    mimetype: "audio/mpeg",
-    fileName: `${song.title}.mp3`,
-    contextInfo: {
-        externalAdReply: {
-            title: song.title.length > 25 ? `${song.title.substring(0, 22)}...` : song.title,
-            body: "THIS IS DUA FATIMA",
-            mediaType: 1,
-            thumbnailUrl: song.thumbnail.replace('default.jpg', 'hqdefault.jpg'),
-            sourceUrl: 'https://whatsapp.com/channel/0029VbAhxYY90x2vgwhXJV3O',
-            mediaUrl: 'https://whatsapp.com/channel/0029VbAhxYY90x2vgwhXJV3O',
-            showAdAttribution: false,
-            renderLargerThumbnail: false
-        }
-    }
-}, { quoted: mek });
+      audio: { url: res.data.result },
+      mimetype: "audio/mpeg",
+      ptt: false,
+      contextInfo: { forwardingScore: 999, isForwarded: true }
+    }, { quoted: mek });
 
-    } catch (error) {
-        console.error(error);
-        reply("An error occurred. Please try again.");
-    }
+    // 4. Then reply with success message
+    await reply(`‎*_FATIMA-𝙈𝘿 𝙔𝙏 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍_*
+‎*╭───────────────━┈⍟*
+‎ ‎*┋* *${video.title}*
+‎*╰───────────────━┈⍟*
+‎*╭────◉◉◉─────────៚*
+‎*┋* *_𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 FATIMA-𝙈𝘿_* 
+‎*╰────◉◉◉─────────៚*`);
+
+  } catch (e) {
+    console.error("play error:", e);
+    reply("❌ Error while downloading audio.");
+  }
 });
-                         
