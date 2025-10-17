@@ -6,7 +6,7 @@
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name KAMRAN-MD",
     "stop": "pm2 stop KAMRAN-MD",
-    "restart": "pm2 restart KAMRAN-MD"
+    "restart": "pm2 restart KAMRAN-SMD"
   },
   "dependencies": {
     "@whiskeysockets/baileys":"github:Jeliostarr/DEV-Baileys",
