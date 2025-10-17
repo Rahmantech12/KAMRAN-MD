@@ -1,4 +1,4 @@
-![FATIMA-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+ASSALAMUALAIKUM!+WELCOME+TO+FATIMA-MD;🔥+ULTIMATE+WHATSAPP+BOT+WITH+MANY%2B+FEATURES;⚡+FASTEST+•+MOST+ADVANCED+•+USER+FRIENDLY&color=FF69B4&color=4285F4&color=00C853&color=9C27B0&color=FF5722)
+![KAMRAN-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+ASSALAMUALAIKUM!+WELCOME+TO+FATIMA-MD;🔥+ULTIMATE+WHATSAPP+BOT+WITH+MANY%2B+FEATURES;⚡+FASTEST+•+MOST+ADVANCED+•+USER+FRIENDLY&color=FF69B4&color=4285F4&color=00C853&color=9C27B0&color=FF5722)
 ```
 DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 ```
@@ -13,11 +13,11 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 
   <p align="center">
-<a href="https://github.com/policeduafatima-ofc/followers"><img title="Followers" src="https://img.shields.io/github/followers/FATIMA-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/policeduafatima/FATIMA-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/policeduafatima/FATIMA-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/policeduafatima/FATIMA-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/policeduafatima/FATIMA-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/policeduafatima/FATIMA-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/policeduafatima/FATIMA-MD?style=flat-square&color=green"></a>
-<a href="https://github.com/policeduafatima/FATIMA-MD/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/policeduafatima-ofc/followers"><img title="Followers" src="https://img.shields.io/github/followers/KAMRAN-MD?color=blue&style=flat-square"></a>
+<a href="https://github.com/policeduafatima/KAMRAN-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/KAMRAN-SMD/KAMRAN-MD?color=blue&style=flat-square"></a>
+<a href="https://github.com/KAMRAN-SMD/KAMRAN-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/KAMRAN-SMD/KAMRAN-MD?color=blue&style=flat-square"></a>
+<a href="https://github.com/KAMRAN-SMD/KAMRAN-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/KAMRAN-SMD/KAMRAN-MD?style=flat-square&color=green"></a>
+<a href="https://github.com/KAMRAN-SMD/KAMRAN-MD/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
 </p>
@@ -25,7 +25,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
   
 --- 
 
-<a href="https://files.catbox.moe/ybb20z.jpg"><img src="https://files.catbox.moe/ybb20z.jpg" alt="glow" border="0"></a>
+<a href="https://files.catbox.moe/1yhu8r.jpg"><img src="https://files.catbox.moe/1yhu8r.jpg" alt="glow" border="0"></a>
 ***
 
 
@@ -35,7 +35,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 `FORK 🍴 AND STAR ⭐ IF YOU LIKE THIS BOT`
 
-  <a href="https://github.com/policeduafatima/FATIMA-MD/fork"><img title="FATIMA-MD" src="https://img.shields.io/badge/FORK-FATIMA%20MD-MDh?color=indigo&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/KAMRAN-SMD/KAMRAN-MD/fork"><img title="KAMRAN-MD" src="https://img.shields.io/badge/FORK-FATIMA%20MD-MDh?color=indigo&style=for-the-badge&logo=stackshare"></a>
   
 ### 2. 𐃁GET SESSION ID𐃁 
 
@@ -65,17 +65,17 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
   </a></br>
   
 
-### <h2 align="">FATIMA-MD DEPLOYMENT OPTIONS𐃁</h2>
+### <h2 align="">KAMRAN-MD DEPLOYMENT OPTIONS𐃁</h2>
 
 ---
 
-<p align="center">Deploy your <strong>FATIMA-MD Bot</strong> with one click on your favorite hosting platforms.</p>
+<p align="center">Deploy your <strong>KAMRAN-MD Bot</strong> with one click on your favorite hosting platforms.</p>
 
 <div align="center">
   <table>
     <tr>
       <td><a href="https://dua-vps.onrender.com" target="_blank"><img src="https://img.shields.io/badge/FREE-VPS-FFA500?style=for-the-badge&logo=serverless&logoColor=white&labelColor=000000"/></a></td>
-      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/policeduafatima/FATIMA-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
+      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/KAMRAN-SMD/KAMRAN-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
     </tr>
     <tr>
       <td><a href="https://talkdrove.com" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
@@ -104,7 +104,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 <table align="center">
   <tr>
     <td>
-      <a href="https://github.com/policeduafatima/FATIMA-MD" target="_blank">
+      <a href="https://github.com/KAMRAN-SMD/KAMRAN-MD" target="_blank">
         <img alt="Deploy From New Repo" src="https://img.shields.io/badge/Deploy-New%20Version-4CAF50?style=for-the-badge&logo=vercel&logoColor=white"/>
       </a>
     </td>
@@ -203,7 +203,7 @@ jobs:
 HII DEARS FRIENDS IF YOU WANT ANY HELP SO YOU CAN CONTACT↘︎ WITH ME WIA WHATSAPP ITS ME ༎꯭ࠫ𝐃꯭𝐮꯭፝֟𝐚𝆭-꯭𝆭𓆪𝐅꯭𝐚ͯ𝐭꯭𝝸፝֟𝐦꯭̈𝐚ͯ༎𝅥ٜٜٜٜࠫ𝆬ː͢  
 
 <p align="">
-<a href='https://wa.me/+923155641171?text=*HELLO+DUA FATIMA+ɪ+ɴᴇᴇᴅ+ʜᴇʟᴘ!.+ɪ+ᴍᴇssᴀɢᴇᴅ+ʏᴏᴜ+ғʀᴏᴍ+FATIMA-MD+ʀᴇᴘᴏ!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
+<a href='https://wa.me/+923195068309?text=*HELLO+DR KAMRAN+ɪ+ɴᴇᴇᴅ+ʜᴇʟᴘ!.+ɪ+ᴍᴇssᴀɢᴇᴅ+ʏᴏᴜ+ғʀᴏᴍ+FATIMA-MD+ʀᴇᴘᴏ!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
@@ -231,9 +231,9 @@ JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER 
 
 ---
 
-## ‎![FATIMA-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+NOTICE!+NOT+FOR+SELL;🔥+ANYONE+COPY+BOT+FILE+SO+FORCE+MANY%2B+PROBLEM;⚡+DON'T+•+TRY+THIS+•+BOT+FILE)
+## ‎![KAMRAN-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=✨+NOTICE!+NOT+FOR+SELL;🔥+ANYONE+COPY+BOT+FILE+SO+FORCE+MANY%2B+PROBLEM;⚡+DON'T+•+TRY+THIS+•+BOT+FILE)
 
 
 
-## ‎![FATIMA-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=+DUA+FATIMA+OWNER+(+923155641171))
+## ‎![KAMRAN-MD](https://readme-typing-svg.demolab.com?font=Roboto&size=26&weight=600&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=+DUA+FATIMA+OWNER+(+923155641171))
 ```
